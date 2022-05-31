@@ -1,0 +1,232 @@
+
+
+.underline{
+    text-decoration: underline;
+}
+
+.white_font{
+    color: white;
+}
+
+.neon_red{
+    color: var(--section-color,#f63e54 );
+    margin-left: 17%;
+}
+
+.neonpurple{
+    color: #c42989;
+}
+
+.large_font{
+   
+    font-size: 5.62rem;
+    line-height: 1.08349;
+    font-weight: 600;
+    letter-spacing: -.003em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+
+
+.mid_font{
+
+font-size: 2.5rem;
+line-height: 1.19048;
+font-weight: 600;
+letter-spacing: .011em;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.small_font {
+    font-size: 19px;
+    line-height: 1.4211026316;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+body{
+    margin : 0;
+
+
+}
+
+
+
+
+
+.profile{
+    text-align: center;
+    
+    width: auto;
+   
+    background: linear-gradient(0deg,#00000088 100%, #ffffff44 100%),url(Images/background.jpeg);
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 120px;
+
+
+
+
+
+
+
+}
+.dp{
+    margin: 45px auto auto auto;
+    width: 250px; /* width of container */
+    height: 250px; /* height of container */
+    object-fit: cover;
+
+    border-radius: 45%;
+   
+}
+
+.heading{
+    margin: 30px auto 0px auto;
+}
+.intro{
+    margin: 60px auto 50px auto;
+}
+
+.skill-row{
+   
+    list-style-type: square;
+  width: 1100px;
+    margin: 100px auto 100px auto;
+    clear: left;
+    background: inherit;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+.skill-bg{
+    background: url(Images/skill_bg.png);
+    position: relative;
+    height: 1600px;  
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+
+
+
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding-left: 1em; 
+    text-indent: -.7em;
+  }
+  
+  li::before {
+    content: "• ";
+    color: #c42989; /* or whatever color you prefer */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.skills{
+    position: absolute;
+    top: 160%;
+    left: 30%;
+    margin-left: 400px;
+   
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.back_img{
+    width: 250px;
+    height: 230px;
+    float: left;
+    margin-right: 60px;
+    border-radius: 25%;
+}
+.front_img{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 60px;
+    border-radius: 25%;
+}
+
+.robo_img{
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 60px;
+    border-radius: 25%;
+}
+.py_img{
+
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 60px;
+    border-radius: 25%;
+}
+/*Fonts
+
+
+for website use serif(words have little feets) and sans-serif
+to siplay code or number on website use monospace
+use google fonts for font embedd
+
+use flaticon to find images
+use giphy for gifs
+
+font size : 
+
+font-size:XXpx;
+it is static and doesnot change with browser settings
+
+font-size:XX%;
+% is dynamic and 100% = 16px , so if you want to set size to 90px
+then % would be 90/16*100 = 562.5%
+
+font-size: XXem;
+1 em = 16px
+
+!!!!!!!!!!!  % and em are inherited , elements em or % is added upon the % or 
+em of parent element !!!!!!!!!!!
+to stop the inhertiance of parent class font size use XXrem
+
+*/
+
+
+
+
+
+
+
+
+

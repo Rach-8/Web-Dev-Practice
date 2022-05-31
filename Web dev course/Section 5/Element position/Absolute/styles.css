@@ -1,0 +1,59 @@
+
+
+.yellow{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: absolute;
+    top : 8px
+
+}
+
+
+.blue{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 108px;
+    top:108px;
+
+
+}
+
+
+.red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: 208px;
+    left : 208px;
+
+
+
+}
+
+
+/* absolute positioning means giving an element position from its
+ margin , current position of element does not matter , it affects 
+ other elements position , for eg:
+ if "top:20px;" then it will put element 20px away from top margin 
+ independant of original position of element
+ Margin = boundaries of parent container
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

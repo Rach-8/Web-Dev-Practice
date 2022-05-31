@@ -1,0 +1,42 @@
+h1{
+    color: red;
+    font-size: 200%;
+}
+
+/* class selectors : */
+.brocolli {
+    background-color: red;
+}
+
+.bacon { 
+    background-color: green;
+}
+/* here i used class , we needed to give different color to brocoli and bacon 
+so i differentiated them by putting different classes in thier image tag , then 
+in css file used ".class{property:value;}" to change stuff" 
+If elements are same even then different properties can be assigned to them by 
+using classes 
+A TAG CAN HAVE MULTIPLE CLASSES , in img tag of brocolli , i have assigned two classes
+.brocolli and .round EX : */
+
+.round {
+    border-radius: 30%;
+}
+
+/* pseudo-class "tag:pseudoclass{property:value;}"
+*/
+
+img:hover{background-color: gold;}
+
+
+
+
+
+
+/* ID selector */
+#heading {
+    color: red;
+}
+
+/* ID same as class but can only be used in one tag and uses # instead of .
+a tag can only have one ID not muptliple like classes */

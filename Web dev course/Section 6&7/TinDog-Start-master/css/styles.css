@@ -1,0 +1,213 @@
+body{
+    font-family: "Montserrat-Black";
+}
+
+/* HEADINGS */
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat-Bold";
+
+}
+
+h1 {  font-family: 'Montserrat-Black, sans-serif';
+      font-size: 3rem;line-height: 1.3; 
+       line-height: 1.3;  font-weight: bolder; color: white;}
+
+h2{ 
+    
+    font-size: 4rem;
+    line-height: 1.5;
+}
+
+h3{
+
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: bolder;
+
+}
+
+
+
+
+#title{
+    background-color: #ff4c68 ;
+    text-align: center;
+
+    
+
+}
+
+.container-fluid{
+    padding: 3% 10%;
+}
+
+
+.navbar-brand{
+    font-size: 4rem;
+}
+
+.nav-item{
+
+    padding: 0px 18px;
+}
+
+.nav-link{
+    font-size:1.3rem;
+    font-family: "Monserrat-Light";
+}
+
+.navbar{
+    padding-bottom:  4.5rem;
+}
+
+.navbar-nav{
+    padding-left: 50%;
+}
+
+
+
+
+.dl_btn{
+    margin: 5% 3% 5% 0%;
+}
+
+
+.center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.feat_icon{
+    font-size: 4rem;
+    padding-bottom: 8%;
+    padding-top: 10%;
+    color: #ff4c68;
+}
+
+.feat_sec{
+    padding: 8%;
+}
+
+
+#testimonials{
+    padding:7% 15%;
+    text-align: center;
+    color: #fff;
+    background-color: #ef8172;
+}
+
+.dog-prof{
+    border-radius: 45%;
+    margin: 20px;
+    width: 14%;
+}
+
+#press{
+    background-color: #ef8172;
+    padding-bottom: 15%;
+    padding-top: 5%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.press-logo{
+    width: 12%;
+}
+
+
+#pricing{
+    padding:8%;
+}
+
+
+
+.pad{
+    padding : 5% 5% 5% 5%;
+}
+
+#feat_sec{
+    z-index: 1;
+    position: relative;
+    background-color: white;
+
+}
+
+.iphone-mockup{
+    padding-left: 11%;
+    transform: rotate(25deg);
+    height: auto;
+    width: 60%;
+
+
+
+}
+
+
+@media (max-width:1028px){
+    .iphone-mockup{
+        transform: rotate(0deg);
+        height: auto;
+        width: 50%;
+    }
+}
+
+
+
+
+#cta{
+    padding: 6%;
+    text-align: center;
+    background-color: #ff4c68;
+}
+
+#cta_text{
+    padding-bottom: 2%;
+    color: white;
+    font-size: 300%;
+}
+
+
+
+#footer{
+    padding: 4% 0% 2% 0%;
+    color: rgb(90, 86, 86);
+    text-align: center;
+}
+
+
+
+.footer_icon{
+    padding:1%;
+    padding-bottom: 2%;
+    font-size: 160%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

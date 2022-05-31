@@ -1,0 +1,70 @@
+.red{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+
+
+
+}
+
+
+.blue{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+
+
+}
+
+
+.yellow{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    position: relative;
+    left:200px;
+    bottom : 200px;
+
+}
+
+
+
+/* Relative to where the elements original postiion was according
+to margins and it does not affect the position of other elements
+and flow of webpage as the relatively positioned elements moves 
+over other elements ,
+for eg : "top : 50px;" means giving 50px space to the element at 
+its original position from top margin .
+, same with other 3 sides
+ Margin = boundaries of parent container */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

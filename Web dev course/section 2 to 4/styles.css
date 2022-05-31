@@ -1,0 +1,86 @@
+
+
+/* CSS REFERENCES : https://developer.mozilla.org/en-US/docs/Web/CSS/Reference */
+/* EMOJI FOR CSS : https://emojipedia.org/ */
+
+/* css syntax = selector{property:value;}
+    selector - what element you want to change
+    property - what prperty you want to change of that selected element
+    value - value entered to get desired change
+
+/*CSS tutorial , use style to change look of body , hr 
+etc , instead of specifiying in every html element you can use <style>-->
+    <!-- use w3schools or any other site to figure out what css attributes
+    and properties are used with specific element*/
+/* there is a hiearchy to inline , internal and external css :
+    ID and class > inline>internal>external>browser assigned default style
+    use external css for global styling and internal
+     css for specific group of elements styling*/
+     
+
+    body{
+        background-color: #E8F6EF;
+    }
+
+    hr {
+
+        border-style: none;
+        border-top-style: dotted;
+  
+        width: 15%;
+        border-color:#A3E4DB;
+        border-width: 5px;
+        
+    }
+    p 
+
+    h1{
+        color: #1C6DD0;
+    }
+    h3{
+        color :#1C6DD0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
