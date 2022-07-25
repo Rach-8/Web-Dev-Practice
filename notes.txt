@@ -1,0 +1,367 @@
+Stuff to lear : 
+git 
+bash 
+DOM
+javascript 
+react
+
+
+code practices - https://github.com/airbnb/javascript/blob/master/react/README.md
+mock up - exact visual reference of the website
+wireframe - basic idea of a website
+ui-patterns.com : use for ui reference
+dribbble.com : webdevs and designers portfolios for reference
+sneakpeetit.com : downloadable and printable layouts of devices used for wireframing a website
+balsamiq.cloud : used to prototype websites using drag and drop
+fontawesome.com : over 900 icons
+
+bootstrap
+responsive :
+<div class="row"> -- starts a row in which column divs can be added
+<div class= "col-XX-NN"></div>
+</div>
+
+
+xx is size : [lg,md,sm]
+NN is space taken by particular column , total unit is 12 , so half a col size is 6 , 1/4 a col size is 3
+using this you can specify what size you want col to take in lg md and sm screens , default is 12
+
+<div class="container"> laurem ipsum</div>
+container is a class which makes a div responsive , more attributes can be added to this class (for eg padding)
+it adjusts with size of the screen
+container-fluid also an option
+
+icon size can be increased using font-size attribute
+
+
+css z index and stacking order(do again)
+
+media query :
+@media <type> <feature>
+
+Code refactoring(dec order of priority):
+Readability : being able to read your code easily
+Modularity : being able to use parts of code easily
+Efficiency
+Length
+
+
+js :
+Math.random() // gives value b/w 0 to 0.99999999
+&& and
+|| or
+! not
+== compares value
+=== compares type and value
+
+array : 
+list = [];
+list[n];
+list.includes("element") (boolean)
+list.push(x) // ads x as an element in the list at the end
+list.pop() removes the last element from the list
+
+while (n >= 1){
+    //condition
+    n++; or n--;
+}
+
+for(var i = 1 ; i<2 ; i++;)
+in for loop you tell variable and then 
+condition and then step of inc or dec the loop
+
+
+
+DOM 
+
+selecting elements in html using js :
+
+X.firstElement = gives first element inside X
+
+X.lastElement = gives last element inside x
+
+document.querySelector("x") = searches x inside the document
+can search "#ID" , ".class" , "tag"
+can combine two selectors in hiearchal order , eg 
+, document.querySelector("li a") = gives out anchor tag in a list
+
+querySelectorAll("x")= does exact same stuff as above^ but with
+ multiple elements and puts them in an array
+
+document.getElementsbytagname("E") = gives an array of all elements of tag name E
+ ^ use [].property/method to apply them on specific index in array of elements
+
+document.getElementbyId("id") = gives element of the particular ID
+
+
+
+
+
+Every element has both properties and methods :
+properties are attributes like color spacing
+methods are functions like click
+
+
+get :
+Element.property
+tells the property
+ 
+set :
+Element.property=n
+changes the property
+
+call :
+element.method();
+calls this function of element
+
+
+properties:
+https://www.w3schools.com/jsref/dom_obj_style.asp
+
+document.querySelector("Element").classList.add("class") = adds class to the element ### NO DOT IN CLASS HERE ###!!!!!!!!!
+document.querySelector("Element").classList.remove("class") = removes class from the element
+document.querySelector("Element").classList.toggle("class") = removes class if added and adds class if removed
+
+
+document.querySelector("element").innerHTML; = gives/sets all the html/text written inside the chosen element
+document.querySelector("element").textContent; = gives/sets the text content inside chosen element 
+
+document.querySelector("ELEMENT").attributes; = outputs all atributes in a list
+document.querySelector("ELEMENT").getAttribute; = retrieves value of chosen attribute of chosen element
+document.querySelector("ELEMENT").setAttribute("attribute"); = changes value of attribute
+
+
+
+Event listeners :
+document.querySelector("button").addEventListener("click",function123)
+- event listener listens for an event in which a click is 
+registered to the chosen element and when that happens it calls
+the function given as a parameter
+
+document.querySelector("button").addEventListener("click",function () {
+    alert("i got clicked");
+});
+
+- same as above but the anonymous function () is editable and you can add 
+instructions directly in the brackets after it
+
+
+Passing functions as arguments :
+
+function add(n1,n2){
+    return n1+n2 ;
+}
+function multiply(n1,n2){
+    return n1*n2;
+}
+function calculator(n1, n2,operator){
+    return operator(n1,n2);
+}
+// we are passing multiplay or add as parameter operator and then
+instead of operator, multiply or add is replaced in return and we 
+get to call other functions by returning function
+
+####### LEARN CALL BACK FUNCTIONS 
+
+___________________________________________________________________________________________________________________________________________________________________________________-
+
+
+REACT
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+
+// ReactDOM.render(html code to render {js to run} , where to render)
+
+
+ReactDOM.render( // use reacts render method to render html on webpage
+  <div> // enter any html element inside brackets () to render them but if you want to use mutiple tags then put them in a div
+    <p contentEditable="true">created by {yourname}</p>
+    <p>copyright {year}</p> // to use javascript inside html use {}
+  </div>,
+
+  document.querySelector("#root") // render it in the root div of index.html file
+);
+
+
+to add class to element in react use className
+<p className="classname">created by {yourname}</p>
+
+javascript expressions {const} can be used as values for element attributes
+expression equals a value , while statement is asking comp to evaluate
+
+
+in react you can add style to the element as a const
+ styleConst = color = red;
+
+
+
+___________________________________________________________________________________________________________________________________________________________________________________
+inline styling react :
+eg. adding red color to h1
+<h1 style={{color:"Red"}}>dwadada</h1>
+# react reads arttibutes as js objects and a js object is
+ {key:"value"} and as javascript needs to be writte in {} 
+ brackets , its written as {{attribute:value}}
+
+
+another example ,
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const customStyle={  #use const styleobject={atrribute1="value",attribute2="value",attribute3="value"}
+  color:"red",
+  fontSize : "34",
+  border:"1px solid black"
+}
+
+ReactDOM.render(
+  <div>
+    <h1 style = {customStyle}> # now add that custom object into style class using js
+      text
+    </h1>
+   
+  </div>,
+  document.getElementById("root")
+);
+
+
+and now if you need to change value of an attribute from customstyle object then,
+customStyle.color = "blue"
+and the color will change to blue , can be done for any attribute listed in style object
+
+___________________________________________________________________________________________________________________________________________________________________________________
+Excersize : write code in which a heading shows current time and different greeting depending on the time amd add color to different greetings
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+const customStyle={
+  color:"red",
+  fontSize : "34",
+  border:"1px solid black"
+}
+const d = new Date();
+let time = d.getHours();
+let min = d.getMinutes();
+let message = ""
+
+if (time < 12 && time >6 ){
+  message = "good morning";
+  customStyle.color="red";
+  }
+if (time > 12 && time <18 ){
+message = "good afternoon";
+customStyle.color="green";
+}
+if (time > 18){
+  message = "good evening";
+  customStyle.color="blue";
+}
+
+ReactDOM.render(
+  <div>
+    <h1 style = {customStyle}>
+      {time}:{min}
+      <br />
+      {message}
+    </h1>
+   
+  </div>,
+  document.getElementById("root")
+);
+
+
+___________________________________________________________________________________________________________________________________________________________________________________
+
+React components 
+They are used to componentise your code and divide it into structures , a component is written in a jsx folder and is imported into index.js . 
+Component is a function which returns html code and it is useable multiple times as self enclosing tag
+!!!! KEEP COMPONENT FIRST LETTER CAPITAL!!!
+jsx file : 
+
+
+import React from "react";
+
+Function Component(){    # define a react component as a function in which returns html code
+    return <HTML CODE>;
+}
+
+export default Component;
+
+
+js file :
+
+import Component from "path of jsx file"
+
+ReactDOM.render(
+    <div>
+    <Component />  #use that function as a self closing html tag and react will think of it as html returned by the component function
+    </div>,
+    document.getElementbyId("root")
+)
+
+
+import * as obj from "file path";   #we can import everything in a file using *
+obj.fucn() #to use a specific function of that file , type obj.func() to call that particular function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
